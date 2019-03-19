@@ -17,4 +17,22 @@ and render those.
 If someone interacts with the user interface maybe the a add a new trip or
 change the filters 
 
+- Create below action creators for trips
+ADD_TRIP - Done
+REMOVE_TRIP - Done
+EDIT_TRIP - Done
+Use uuid package to generate unique id for but later on it will come from the backend API - Done
+
+- Create below action creators for filters
+SET_TEXT_FILTER - Done
+SORT_BY_DATE - Done
+SET_UPLOAD_DATE - Done
+
+- Create reducers for trips and filters - Done
+
+- Create a store configuration - Done 
+
+- Create a getVisibleTrips function - use built in methods like filter and sort to filter and sort trips data  - to do (part of stretch, might not work on this until mvp is done)
+
+
 
