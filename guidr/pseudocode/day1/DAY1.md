@@ -11,3 +11,5 @@ Break the UI into a Component Hierarchy (little logical pieces)
             - <Logout /> - be able to logout
 - <FilterTripType />(Blue) - receives user input
     - <TripTable />(Green) - displays and filters the data collection based on user input
+![Breakdown of GuidrApp homepage](https://github.com/novinary/guidr-app/blob/novina-pun/guidr/pseudocode/day1/Homepage.png)
+
