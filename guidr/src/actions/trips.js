@@ -9,12 +9,11 @@ export const addTrip = (
     duration = 0,
     type = '',
     profOrPlea = '',
-    description=''
-
+    description = ''
   } = {}
 ) => ({
   type: 'ADD_TRIP',
-  addTrip: {
+  trip: {
     id: uuid(),
     title,
     date,

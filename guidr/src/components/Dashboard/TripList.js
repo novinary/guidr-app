@@ -1,16 +1,19 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React from "react";
+import { connect } from "react-redux";
+import TripListItem from "./TripListItem";
 
-const TripList = (props) => (
+const TripList = props => (
   <div>
     <h1>Trip List</h1>
-    {props.trips.length}
+    {props.trips.map(trip => {
+      return <TripListItem key={trip.id} {...trip} />;
+    })}
   </div>
 );
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
-    trips: state.trips,
+    trips: state.trips
   };
 };
 

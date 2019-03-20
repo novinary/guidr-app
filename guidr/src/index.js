@@ -7,14 +7,14 @@ import AppRouter from './routers/AppRouter';
 
 const store = configureStore();
 
-store.dispatch(addTrip({ description: 'London' }));
-store.dispatch(addTrip({ description: 'San Fran' }));
+store.dispatch(addTrip({ title: 'A Long-expected Party', date: 20032019, location: 'The Moon', duration: 10, type: 'Hiking', profOrPlea: 'Pleasure', description: 'test' }));
+store.dispatch(addTrip({ description: 'San Fran' }))
 
 const jsx = (
-    <Provider store={store}>
-      <AppRouter />
-    </Provider>
-  );
-  
-  ReactDOM.render(jsx, document.getElementById('root'));
+  <Provider store={store}>
+    <AppRouter />
+  </Provider>
+);
+
+ReactDOM.render(jsx, document.getElementById('root'));
 
