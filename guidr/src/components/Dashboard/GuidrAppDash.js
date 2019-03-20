@@ -1,5 +1,10 @@
 import React from "react";
+import TripList from './TripList';
 
-const GuidrAppDash = () => <div>This is from my GuidrAppDash component</div>;
+const GuidrAppDash = () => (
+    <div>
+      <TripList />
+    </div>
+  );
 
 export default GuidrAppDash;
