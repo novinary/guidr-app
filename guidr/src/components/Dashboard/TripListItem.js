@@ -1,7 +1,11 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { removeTrip } from '../../actions/trips'
 
 const TripListItem =
-    ({ title,
+    ({  dispatch,
+        id,
+        title,
         date,
         location,
         duration,
@@ -16,7 +20,10 @@ const TripListItem =
                 <p>{type}</p>
                 <p>{profOrPlea}</p>
                 <p>{description}</p>
+                <button onClick={() => {
+                    dispatch(removeTrip({ id }));
+                }}>Remove</button>
             </div>
         );
 
-export default TripListItem;
+export default connect()(TripListItem);
