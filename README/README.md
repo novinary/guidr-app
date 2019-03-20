@@ -26,5 +26,5 @@ For my project this week, I will demonstrate proficiency by working with a group
 
 I will use my skills to be responsible for the Front End Architecture of this project. I will work directly with the UI Developer and the Back End Developer to ensure that all React components are wired up in proper fashion.
 
-I will use below rubric to help guide my development processes
-![rubric](https://github.com/novinary/guidr-app/blob/novina-pun/guidr/README/rubric.png)
+I will use this rubric to help guide my development processes
+![rubric](https://github.com/novinary/guidr-app/blob/novina-pun/README/rubric.png)
