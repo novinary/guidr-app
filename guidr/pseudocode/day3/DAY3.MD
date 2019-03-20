@@ -15,3 +15,8 @@ new component is just our TripList component wiht the props from the store- Done
 - Remove button should dispatch an action when clicked
     - Import removeTrip action creator - Done
     - Allow TripListItem to access dispatch then wire up on click to get it working - Done
+
+
+## ** Step 4 Create Trip Add/Edit Form **
+- Create a new Component class called TripForm - Done
+- Render TripForm into AddTrip - Done

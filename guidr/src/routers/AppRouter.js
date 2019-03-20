@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import GuidrAppDash from '../components/Dashboard/GuidrAppDash'
 import FilterTripType from '../components/Dashboard/FilterTripType'
-import AddTrip from '../components/Profile/AddTrip'
-import AdventureFeed from '../components/Profile/AdventureFeed'
-import EditTrip from '../components/Profile/EditTrip'
+import AddTrip from '../components/Dashboard/AddTrip'
+import AdventureFeed from '../components/Dashboard/AdventureFeed'
+import EditTrip from '../components/Dashboard/EditTrip'
 import Header from '../components/Header'
 
 const AppRouter = () => (

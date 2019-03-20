@@ -28,3 +28,8 @@ I will use my skills to be responsible for the Front End Architecture of this pr
 
 I will use this rubric to help guide my development processes
 ![rubric](https://github.com/novinary/guidr-app/blob/novina-pun/README/rubric.png)
+
+Below are MVP and Stretch goals
+MVP: Guides will be able to use Guidr to build their Outdoor Resume. Users can login, create read and update their trips with a trip type, location, duration and whether it's private or professional.
+
+Stretch: Allow users to print off their outdoor resume in PDF format so that they can hand it off to potential employers/guide licenseing organizations.
