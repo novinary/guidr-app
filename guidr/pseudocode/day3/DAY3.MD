@@ -18,5 +18,15 @@ new component is just our TripList component wiht the props from the store- Done
 
 
 ## ** Step 4 Create Trip Add/Edit Form **
+** Add Form **
 - Create a new Component class called TripForm - Done
 - Render TripForm into AddTrip - Done
+- Create a Form with inputs and submit button - Done
+- Use local component state to track the changes to 
+keep track of the changes to every single input. (When a fom is submitted by a user,
+it is sent off to Redux to either edit the existing trip or create the new one. - Done
+- Set the value for the inputs to equal to current state value (this will create READ ONLY value) - Done
+- We want the user to able to change the value so setup OnChange - Done
+- Check in React dev tool if the binding is working - Done
+
+** Edit Form **
