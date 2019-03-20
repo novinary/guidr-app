@@ -29,4 +29,11 @@ it is sent off to Redux to either edit the existing trip or create the new one. 
 - We want the user to able to change the value so setup OnChange - Done
 - Check in React dev tool if the binding is working - Done
 
+- setup onSubmit handler for the form
+- use the onSubmit to my prop
+
 ** Edit Form **
+- very similar to TripForm and should require small changes
+- TripForm has empty default values, EditForm should get the current values
+- Set up a single prop that gets passed into TripForm if it exists we will use
+that value from default
