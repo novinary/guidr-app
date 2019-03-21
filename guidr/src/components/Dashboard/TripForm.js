@@ -11,93 +11,113 @@ export default class TripForm extends React.Component {
         profOrPlea: '',
         description: ''
 
-      };
+    };
 
-      onTitleChange = (e) => {
+    onTitleChange = (e) => {
         const title = e.target.value;
         this.setState(() => ({ title }));
-      };
+    };
 
-      onDateChange = (e) => {
+    onDateChange = (e) => {
         const date = e.target.value;
         this.setState(() => ({ date }));
-      };
+    };
 
-      onLocationChange = (e) => {
+    onLocationChange = (e) => {
         const location = e.target.value;
         this.setState(() => ({ location }));
-      };
+    };
 
-      onDurationChange = (e) => {
+    onDurationChange = (e) => {
         const duration = e.target.value;
         this.setState(() => ({ duration }));
-      };
+    };
 
-      onTypeChange = (e) => {
+    onTypeChange = (e) => {
         const type = e.target.value;
         this.setState(() => ({ type }));
-      };
+    };
 
-      onProfOrPleaChange = (e) => {
-        const  profOrPlea = e.target.value;
-        this.setState(() => ({  profOrPlea }));
-      };
+    onProfOrPleaChange = (e) => {
+        const profOrPlea = e.target.value;
+        this.setState(() => ({ profOrPlea }));
+    };
 
-      onDescriptionChange = (e) => {
+    onDescriptionChange = (e) => {
         const description = e.target.value;
         this.setState(() => ({ description }));
-      };
+    };
+
+    onSubmit = (e) => {
+        e.preventDefault();  //stop full page referesh 
+
+        if (!this.state.title || !this.state.location) {
+            this.setState(() => ({ error: 'Please provide title and location.' }));
+        } else {
+            this.setState(() => ({ error: '' }));
+            this.props.onSubmit({
+                title: this.state.description,
+                date: this.state.date,
+                location: this.state.location,
+                duration: this.state.duration,
+                type: this.state.type,
+                profOrPlea: this.state.profOrPlea,
+                description: this.state.description
+            });
+        }
+    }
 
 
-  render() {
-    return <div>
-        <form>
-            <input
-                type="text"
-                placeholder="Title"
-                autoFocus    // put focus on this input automatically
-                value={this.state.title}
-                onChange={this.onTitleChange}
-            />
-            <input 
-                type="date"
-                placeholder="Date"
-                value={this.state.date}
-                onChange={this.onDateChange}
-            />
-             <input 
-                type="text"
-                placeholder="Location"
-                value={this.state.Location}
-                onChange={this.onLocationChange}
-            />
-             <input 
-                type="text"
-                placeholder="Duration"
-                value={this.state.duration}
-                onChange={this.onDurationChange}
-            />
-             <input 
-                type="type"
-                placeholder="Trip Type"
-                value={this.state.type}
-                onChange={this.onTypeChange}
-            />
-             <input 
-                type="text"
-                placeholder="Professional or Pleasure"
-                value={this.state.profOrPlea}
-                onChange={this.onProfOrPleaChange}
-            />
-             <textarea 
-                type="text"
-                placeholder="Add a description"
-                value={this.state.description}
-                onChange={this.onDescriptionChange}
-            />
-            <button>Add Trip</button>
-        </form> 
-      </div>;
+    render() {
+        return <div>
+            {this.state.error && <p>{this.state.error}</p>}
+            <form onSubmit={this.onSubmit}>
+                <input
+                    type="text"
+                    placeholder="Title"
+                    autoFocus    // put focus on this input automatically
+                    value={this.state.title}
+                    onChange={this.onTitleChange}
+                />
+                <input
+                    type="date"
+                    placeholder="Date"
+                    value={this.state.date}
+                    onChange={this.onDateChange}
+                />
+                <input
+                    type="text"
+                    placeholder="Location"
+                    value={this.state.Location}
+                    onChange={this.onLocationChange}
+                />
+                <input
+                    type="text"
+                    placeholder="Duration"
+                    value={this.state.duration}
+                    onChange={this.onDurationChange}
+                />
+                <input
+                    type="type"
+                    placeholder="Trip Type"
+                    value={this.state.type}
+                    onChange={this.onTypeChange}
+                />
+                <input
+                    type="text"
+                    placeholder="Professional or Pleasure"
+                    value={this.state.profOrPlea}
+                    onChange={this.onProfOrPleaChange}
+                />
+                <textarea
+                    type="text"
+                    placeholder="Add a description"
+                    value={this.state.description}
+                    onChange={this.onDescriptionChange}
+                />
+                <button>Add Trip</button>
+            </form>
+        </div>;
 
-  }
+    }
 }
