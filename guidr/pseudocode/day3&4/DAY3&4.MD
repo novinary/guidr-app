@@ -60,3 +60,10 @@ Be able to get the entire Trip objects
         - props.history.push to push over to the homepage - Done
 - Move the remove button from TripListItem to EditTrip page 
     - Remove trip via dispatch and then redirect to dashboard page
+
+
+## ** Step 5 Create a login authentication **
+- Create a login UI
+    - Create a LoginPage component with Login button - Done
+    - Show Login component at root of app -> / - Done
+    - Show GuidrAppDash at -> / dashboard - Done
