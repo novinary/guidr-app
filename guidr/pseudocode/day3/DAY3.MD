@@ -46,3 +46,5 @@ Be able to get the entire Trip objects
     Be able to search the trips array for the trip with an ID that matches this one.
         - This means I need to import Connect to grab that from react-redux - Done
 - Render TripForm in the EditForm
+    - Switch to EditForm when clicking on an exisiting trip - Done
+    - Populate data in the form with their existing values

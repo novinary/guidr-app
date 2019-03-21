@@ -1,11 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import TripForm from './TripForm';
 
 const EditTrip = (props) => {
     console.log(props);
     return (
         <div>
-            This is from my EditTrip with id of {props.match.params.id}
+            <TripForm
+             onSubmit={(trip) => {
+                 console.log('updated', trip)
+             }}
+            />
         </div>
     );
 };
