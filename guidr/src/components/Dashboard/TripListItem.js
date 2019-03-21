@@ -14,7 +14,7 @@ const TripListItem =
         profOrPlea,
         description }) => (
             <div>
-                 <Link to={`/edit/${id}`}>
+                 <Link to={`/editTrip/${id}`}>
                 <h3>{title}</h3>   {/*use template string and interpolate id value */}
                 </Link>
                 <p>{location}</p>

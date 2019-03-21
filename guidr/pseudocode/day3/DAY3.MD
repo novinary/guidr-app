@@ -38,7 +38,11 @@
 ** Edit Form **
 Very similar to TripForm and should require small changes. TripForm has empty default values, EditForm should get the current values.
 - Make change to the TripListItem component
-Link over to the page and add correct id
+- Link over to the page and add correct id
     - import Link from react-router-dom - Done
     - wrap h3 into Link - Done
- 
+Be able to get the entire Trip objects
+    - Connect EditTrip component to redux store - Done
+    Be able to search the trips array for the trip with an ID that matches this one.
+        - This means I need to import Connect to grab that from react-redux - Done
+- Render TripForm in the EditForm
