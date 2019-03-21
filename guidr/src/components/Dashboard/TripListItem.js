@@ -1,10 +1,8 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { removeTrip } from '../../actions/trips'
 import { Link } from 'react-router-dom';
 
 const TripListItem =
-    ({  dispatch,
+    ({
         id,
         title,
         date,
@@ -22,10 +20,7 @@ const TripListItem =
                 <p>{type}</p>
                 <p>{profOrPlea}</p>
                 <p>{description}</p>
-                <button onClick={() => {
-                    dispatch(removeTrip({ id }));
-                }}>Remove</button>
             </div>
         );
 
-export default connect()(TripListItem);
+export default TripListItem;

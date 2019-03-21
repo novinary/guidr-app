@@ -58,3 +58,5 @@ Be able to get the entire Trip objects
         - Dispatch action object it returns - Done
     - Redirect to the dashboard
         - props.history.push to push over to the homepage - Done
+- Move the remove button from TripListItem to EditTrip page 
+    - Remove trip via dispatch and then redirect to dashboard page
