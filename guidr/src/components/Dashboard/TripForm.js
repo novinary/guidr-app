@@ -1,17 +1,21 @@
 import React from "react";
 
 export default class TripForm extends React.Component {
+    constructor(props) {
+        super(props);
+        
     // local state component objects
-    state = {
-        title: '',
-        date: '',
-        location: '',
-        duration: '',
-        type: '',
-        profOrPlea: '',
-        description: ''
-
+    this.state = {
+        title: props.trip ? props.trip.title : '',
+        date: props.trip ? props.trip.date : '',
+        location: props.trip ? props.trip.location: '',
+        duration: props.trip ? props.trip.duration : '',
+        type: props.trip ? props.trip.type : '',
+        profOrPlea: props.trip ? props.trip.profOrPlea : '',
+        description: props.trip ? props.trip.description : '',
+        error: ''
     };
+}
 
     onTitleChange = (e) => {
         const title = e.target.value;

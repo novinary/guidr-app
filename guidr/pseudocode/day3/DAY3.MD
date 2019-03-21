@@ -47,4 +47,8 @@ Be able to get the entire Trip objects
         - This means I need to import Connect to grab that from react-redux - Done
 - Render TripForm in the EditForm
     - Switch to EditForm when clicking on an exisiting trip - Done
-    - Populate data in the form with their existing values
+    - Populate data in the form with their existing values by taking a trip and passing it down as props - Done
+    - Define state inside of a constructor function to access the props - Done
+    - Use series of ternator operators, for example for title, check if props.title exists then start 
+    the title off the same value as start off an empty string if not-existent - Done
+    - Do the same for other props - Done

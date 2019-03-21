@@ -7,6 +7,7 @@ const EditTrip = (props) => {
     return (
         <div>
             <TripForm
+            trip={props.trip} // populate existing data in the form
              onSubmit={(trip) => {
                  console.log('updated', trip)
              }}
