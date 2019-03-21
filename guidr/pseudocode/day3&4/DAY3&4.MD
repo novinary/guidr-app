@@ -52,3 +52,9 @@ Be able to get the entire Trip objects
     - Use series of ternator operators, for example for title, check if props.title exists then start 
     the title off the same value as start off an empty string if not-existent - Done
     - Do the same for other props - Done
+- Be able to change and save the data
+    - Dispatch the action to edit the trip
+        - Import editTrip action creator - Done
+        - Dispatch action object it returns - Done
+    - Redirect to the dashboard
+        - props.history.push to push over to the homepage - Done

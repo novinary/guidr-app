@@ -1,15 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import TripForm from './TripForm';
+import { editTrip } from '../../actions/trips'
 
 const EditTrip = (props) => {
-    console.log(props);
     return (
         <div>
             <TripForm
             trip={props.trip} // populate existing data in the form
              onSubmit={(trip) => {
-                 console.log('updated', trip)
+                 props.dispatch(editTrip(props.trip.id, trip));
+                 props.history.push('/');
              }}
             />
         </div>

@@ -3,7 +3,7 @@ import React from "react";
 export default class TripForm extends React.Component {
     constructor(props) {
         super(props);
-        
+
     // local state component objects
     this.state = {
         title: props.trip ? props.trip.title : '',
@@ -60,7 +60,7 @@ export default class TripForm extends React.Component {
         } else {
             this.setState(() => ({ error: '' }));
             this.props.onSubmit({
-                title: this.state.description,
+                title: this.state.title,
                 date: this.state.date,
                 location: this.state.location,
                 duration: this.state.duration,
