@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { removeTrip } from '../../actions/trips'
+import { Link } from 'react-router-dom';
 
 const TripListItem =
     ({  dispatch,
@@ -13,8 +14,9 @@ const TripListItem =
         profOrPlea,
         description }) => (
             <div>
-                <h3>{title}</h3>
-                <p>{date}</p>
+                 <Link to={`/edit/${id}`}>
+                <h3>{title}</h3>   {/*use template string and interpolate id value */}
+                </Link>
                 <p>{location}</p>
                 <p>{duration}</p>
                 <p>{type}</p>

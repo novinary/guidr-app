@@ -36,8 +36,9 @@
 - Make Title and Location mandatory fields. Throw an error message if they're left empty - Done
 
 ** Edit Form **
-
-- very similar to TripForm and should require small changes
-- TripForm has empty default values, EditForm should get the current values
-- Set up a single prop that gets passed into TripForm if it exists we will use
-  that value from default
+Very similar to TripForm and should require small changes. TripForm has empty default values, EditForm should get the current values.
+- Make change to the TripListItem component
+Link over to the page and add correct id
+    - import Link from react-router-dom - Done
+    - wrap h3 into Link - Done
+ 
